@@ -1,0 +1,63 @@
+.card-img-top {
+  display: block;
+  max-width:600px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Make all cards in row the same height */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  width: 300px;
+}
+
+.row > div[class*='col-'] {
+  display: flex;
+  padding-top: 70px;
+}
+
+/* Hover effects */
+.card {
+  transition: -webkit-transform 0.3s ease;
+  margin-left: 25%;
+  margin-right: -15%;
+}
+.card:hover {
+  transform: scale(1.01, 1.01);
+}
+
+/* Responsive design for image heights */
+@media (min-width: 576px) {
+  .card-img-top {
+    height: 50vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-img-top {
+    height: 30vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-img-top {
+    height: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-img-top {
+    height: 20vw;
+  }
+}
+
+.logo {
+  margin-left: -10px;
+}
+
